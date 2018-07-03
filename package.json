@@ -1,0 +1,19 @@
+{
+  "name": "zilibot",
+  "version": "1.0.0",
+  "description": "Trader Panel for Exmo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Scader",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "moment": "^2.22.2",
+    "querystring": "^0.2.0",
+    "request": "^2.87.0"
+  }
+}
