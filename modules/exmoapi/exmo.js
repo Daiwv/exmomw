@@ -35,7 +35,6 @@ const Exmo = {
 				
 			data.nonce = this.cfg.nonce++;
 			const post_data = querystring.stringify(data);
-			const that = this;
 			
 			const options = {
 			  url: this.serviceUrl + method_name,
