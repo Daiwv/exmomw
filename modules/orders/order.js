@@ -32,7 +32,7 @@ const Order = function(orderParams, dataSource){
 	
 	this.checkState = function(){
 		
-		if(this.data[this.pair] !== void(0) && this.data[this.pair].sell_price <=this.stopSell){ // если цена упала ниже заданного порога безопасности - немедленно закрывать сделку
+		if(this.data[this.pair] !== void(0) && this.data[this.pair].sell_price <=this.stopSell){ 
 			this.cancel(this.stopSellReceiverContext, this.stopSellReceiverCallback);
 		}
 		if(this.data[this.pair] !== void(0) && this.data[this.pair].sell_price >= this.priceIntent){
