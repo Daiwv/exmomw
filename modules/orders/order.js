@@ -19,8 +19,8 @@ const Order = function(orderParams, dataSource){
 			this.pair = orderParams.pair;
 			
 			params = { pair: orderParams.pair, quantity: orderParams.quantity, price: orderParams.price, type: orderParams.type }
+			
 			ordersAPI.createOrder(params, this, function(result){
-				console.log(result);
 				if(result.result){
 					this.buy_id = result.order_id;
 					this.observe();
@@ -36,18 +36,16 @@ const Order = function(orderParams, dataSource){
 			this.cancel(this.stopSellReceiverContext, this.stopSellReceiverCallback);
 		}
 		if(this.data[this.pair] !== void(0) && this.data[this.pair].sell_price >= this.priceIntent){
-			//this.priceHook = 
+			//this.priceHook = {};
 		}
 	}
 	
 	this.observe = function(){
-		console.log('this.data',this.data);
-		console.log('$$$', this.pair);
 		setTimeiout(this.observe(), 1000);
 	}
 	
 	this.sell = function(){
-		
+		// 
 	}
 	
 	this.cancel = function(ctx, cb){
