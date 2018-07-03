@@ -1,0 +1,7 @@
+{
+	"APIKey":"Your EXMO API Key",
+	"APISecret":"Your EXMO Secret",
+	"host":"api.exmo.com",
+	"protocol":"https",
+	"APIVersion":"v1"
+}
