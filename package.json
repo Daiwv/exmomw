@@ -1,10 +1,10 @@
 {
-  "name": "zilibot",
+  "name": "Zilibot",
   "version": "1.0.0",
-  "description": "Trader Panel for Exmo",
+  "description": "Middleware for EXMO Trader Panel",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "Scader",
   "license": "ISC",
